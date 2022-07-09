@@ -187,7 +187,7 @@ async def play(c: Client, m: Message):
             if chat_id in QUEUE:
                 pos = add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await suhu.delete()
-                await m.reply_text(f"**add track to queue**")
+                await m.reply_text(f"**queue**")
                 
             else:
              try:
@@ -234,7 +234,7 @@ async def play(c: Client, m: Message):
                 await add_active_chat(chat_id)
                 add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await suhu.delete()
-                await m.reply_text(f"**playing**")
+                await m.reply_text(f"**add to List**")
              except Exception as e:
                 await suhu.delete()
                 await m.reply_text(f"🚫 error:\n\n» {e}")
@@ -327,7 +327,7 @@ async def play(c: Client, m: Message):
                             await add_active_chat(chat_id)
                             add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                             await suhu.delete()
-                            await m.reply_text(f"**playing....**")
+                            await m.reply_text(f"**added to list**")
                         except Exception as ep:
                             await suhu.delete()
                             await m.reply_text(f"💬 error: `{ep}`")
