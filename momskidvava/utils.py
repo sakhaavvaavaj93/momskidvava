@@ -251,8 +251,8 @@ async def stream_end_handler(_, u: Update):
         elif op==2:
            await bot.send_message(chat_id, "❌ **an error occurred**\n\n» **Clearing** __Queues__ **and leaving video chat.**")
         else:
-         await bot.send_photo(chat_id, f"{NEXT_IMG}", caption=f"💡 **Streaming next track**\n\n🏷 **Name:** [{op[0]}]({op[1]}) | `{op[2]}`\n💭 **Chat:** `{chat_id}`", reply_markup=keyboard)
-    else:
+         await bot.send_text(chat_id, f"💡 **Streaming next**")
+   else:
        pass
 
 
