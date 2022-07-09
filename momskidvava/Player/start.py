@@ -7,7 +7,7 @@ from arumughan.main import Test, bot as Client
 
 
 
-from arumughan.Database.dbusers import add_served_user
+from momskidvava.Database.dbusers import add_served_user
 from config import START_PIC, UPDATES_CHANNEL, GROUP_SUPPORT
 
 
