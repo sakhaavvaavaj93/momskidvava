@@ -252,7 +252,7 @@ async def stream_end_handler(_, u: Update):
            await bot.send_message(chat_id, "❌ **an error occurred**\n\n» **Clearing** __Queues__ **and leaving video chat.**")
         else:
          await bot.send_text(chat_id, f"💡 **Streaming next**")
-   else:
+     else:
        pass
 
 
