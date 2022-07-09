@@ -278,7 +278,7 @@ async def play(c: Client, m: Message):
                     if chat_id in QUEUE:
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                         await suhu.delete()
-                        await m.reply_text(f"**playing.....**")
+                        await m.reply_text(f"**added to queue**")
                     else:
                         try:
                             await suhu.edit(
